@@ -2,67 +2,73 @@
 <html>
 <head>
     <title>Your Name - Personal Homepage</title>
-    <!-- Add any CSS file or styles here -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Header section -->
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my personal homepage</p>
+        <div class="container">
+            <h1>Your Name</h1>
+            <p>Welcome to my personal homepage</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Navigation section -->
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- About section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi there! I'm Your Name, and this is my personal homepage. 
-            Feel free to explore and learn more about me and my projects.
-        </p>
-        <!-- Add more details about yourself here -->
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi there! I'm Your Name, and this is my personal homepage. 
+                Feel free to explore and learn more about me and my projects.
+            </p>
+        </div>
     </section>
 
     <!-- Projects section -->
     <section id="projects">
-        <h2>My Projects</h2>
-        <ul>
-            <li>
-                <h3>Project 1</h3>
-                <p>
-                    Description of Project 1 goes here.
-                </p>
-            </li>
-            <li>
-                <h3>Project 2</h3>
-                <p>
-                    Description of Project 2 goes here.
-                </p>
-            </li>
-            <!-- Add more projects here -->
-        </ul>
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="gallery">
+                <div class="project">
+                    <img src="project1.jpg" alt="Project 1">
+                    <h3>Project 1</h3>
+                    <p>Description of Project 1 goes here.</p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2">
+                    <h3>Project 2</h3>
+                    <p>Description of Project 2 goes here.</p>
+                </div>
+                <!-- Add more projects here -->
+            </div>
+        </div>
     </section>
 
     <!-- Contact section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <p>
-            You can reach me at: your.email@example.com
-        </p>
-        <!-- You can add a contact form or any other contact details here -->
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
